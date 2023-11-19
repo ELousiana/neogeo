@@ -25,6 +25,8 @@ class _SelectionWidgetState extends State<SelectionWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => SelectionModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

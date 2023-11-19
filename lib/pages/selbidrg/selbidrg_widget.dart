@@ -29,6 +29,8 @@ class _SelbidrgWidgetState extends State<SelbidrgWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => SelbidrgModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

@@ -36,6 +36,7 @@ class _CardsegWidgetState extends State<CardsegWidget>
       length: 3,
       initialIndex: 0,
     )..addListener(() => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

@@ -36,6 +36,7 @@ class _Card3limWidgetState extends State<Card3limWidget>
       length: 3,
       initialIndex: 0,
     )..addListener(() => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

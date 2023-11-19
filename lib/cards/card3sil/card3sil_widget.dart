@@ -36,6 +36,7 @@ class _Card3silWidgetState extends State<Card3silWidget>
       length: 3,
       initialIndex: 0,
     )..addListener(() => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

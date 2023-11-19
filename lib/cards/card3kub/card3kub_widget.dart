@@ -36,6 +36,7 @@ class _Card3kubWidgetState extends State<Card3kubWidget>
       length: 3,
       initialIndex: 0,
     )..addListener(() => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

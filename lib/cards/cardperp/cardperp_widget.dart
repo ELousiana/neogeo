@@ -36,6 +36,7 @@ class _CardperpWidgetState extends State<CardperpWidget>
       length: 3,
       initialIndex: 0,
     )..addListener(() => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

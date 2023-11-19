@@ -1,4 +1,4 @@
-package com.mycompany.mpvarproject
+package com.mycompany.neogeo
 
 import io.flutter.embedding.android.FlutterActivity
 

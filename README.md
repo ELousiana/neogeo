@@ -1,4 +1,4 @@
-# mpvarproject
+# neogeo
 
 A new Flutter project.
 

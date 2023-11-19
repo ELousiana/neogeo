@@ -36,6 +36,7 @@ class _CardlingWidgetState extends State<CardlingWidget>
       length: 3,
       initialIndex: 0,
     )..addListener(() => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override

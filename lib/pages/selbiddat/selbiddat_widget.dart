@@ -41,6 +41,7 @@ class _SelbiddatWidgetState extends State<SelbiddatWidget>
       length: 3,
       initialIndex: 0,
     )..addListener(() => setState(() {}));
+    WidgetsBinding.instance.addPostFrameCallback((_) => setState(() {}));
   }
 
   @override
@@ -390,7 +391,7 @@ class _SelbiddatWidgetState extends State<SelbiddatWidget>
                                                           child:
                                                               FlutterFlowExpandedImageView(
                                                             image: Image.asset(
-                                                              'assets/images/persegi2.png',
+                                                              'assets/images/perbg.png',
                                                               fit: BoxFit
                                                                   .contain,
                                                             ),
@@ -412,7 +413,7 @@ class _SelbiddatWidgetState extends State<SelbiddatWidget>
                                                             BorderRadius
                                                                 .circular(8.0),
                                                         child: Image.asset(
-                                                          'assets/images/persegi2.png',
+                                                          'assets/images/perbg.png',
                                                           width:
                                                               double.infinity,
                                                           height:
