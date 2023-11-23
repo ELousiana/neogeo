@@ -10,6 +10,11 @@ class CardlingModel extends FlutterFlowModel<CardlingWidget> {
   int get tabBarCurrentIndex =>
       tabBarController != null ? tabBarController!.index : 0;
 
+  // State field(s) for TextField widget.
+  FocusNode? textFieldFocusNode;
+  TextEditingController? textController;
+  String? Function(BuildContext, String?)? textControllerValidator;
+
   /// Initialization and disposal methods.
 
   @override
@@ -18,6 +23,8 @@ class CardlingModel extends FlutterFlowModel<CardlingWidget> {
   @override
   void dispose() {
     tabBarController?.dispose();
+    textFieldFocusNode?.dispose();
+    textController?.dispose();
   }
 
   /// Action blocks are added here.

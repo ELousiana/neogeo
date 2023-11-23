@@ -360,7 +360,7 @@ class _Card3kerWidgetState extends State<Card3kerWidget>
                                         ),
                                       ),
                                       const TextSpan(
-                                        text: 'LUASPERMUKAAN : ',
+                                        text: 'LUAS PERMUKAAN : ',
                                         style: TextStyle(),
                                       ),
                                       const TextSpan(

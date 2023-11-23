@@ -24,6 +24,10 @@ class SelbiddatModel extends FlutterFlowModel<SelbiddatWidget> {
   int get tabBarCurrentIndex =>
       tabBarController != null ? tabBarController!.index : 0;
 
+  // State field(s) for TextField widget.
+  FocusNode? textFieldFocusNode;
+  TextEditingController? textController;
+  String? Function(BuildContext, String?)? textControllerValidator;
   // Model for cardperp component.
   late CardperpModel cardperpModel;
   // Model for cardseg component.
@@ -56,6 +60,9 @@ class SelbiddatModel extends FlutterFlowModel<SelbiddatWidget> {
   void dispose() {
     unfocusNode.dispose();
     tabBarController?.dispose();
+    textFieldFocusNode?.dispose();
+    textController?.dispose();
+
     cardperpModel.dispose();
     cardsegModel.dispose();
     cardjajaModel.dispose();

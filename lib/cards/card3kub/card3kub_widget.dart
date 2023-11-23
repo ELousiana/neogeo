@@ -348,7 +348,7 @@ class _Card3kubWidgetState extends State<Card3kubWidget>
                                         ),
                                       ),
                                       const TextSpan(
-                                        text: 'LUAS : ',
+                                        text: 'LUAS PERMUKAAN : ',
                                         style: TextStyle(),
                                       ),
                                       TextSpan(
