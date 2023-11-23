@@ -10,6 +10,7 @@ import '/flutter_flow/flutter_flow_expanded_image_view.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
+import '/flutter_flow/custom_functions.dart' as functions;
 import 'package:flip_card/flip_card.dart';
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -553,7 +554,12 @@ class _SelbiddatWidgetState extends State<SelbiddatWidget>
                                                             const AlignmentDirectional(
                                                                 0.00, 0.00),
                                                         child: Text(
-                                                          'VOLUME',
+                                                          functions
+                                                              .kelper(double
+                                                                  .tryParse(_model
+                                                                      .textController
+                                                                      .text))
+                                                              .toString(),
                                                           textAlign:
                                                               TextAlign.center,
                                                           maxLines: 1,
@@ -597,7 +603,12 @@ class _SelbiddatWidgetState extends State<SelbiddatWidget>
                                                             const AlignmentDirectional(
                                                                 0.00, 0.00),
                                                         child: Text(
-                                                          'VOLUME',
+                                                          functions
+                                                              .luper(double
+                                                                  .tryParse(_model
+                                                                      .textController
+                                                                      .text))
+                                                              .toString(),
                                                           textAlign:
                                                               TextAlign.center,
                                                           maxLines: 1,
