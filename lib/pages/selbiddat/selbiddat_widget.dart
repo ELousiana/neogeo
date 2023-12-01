@@ -293,7 +293,7 @@ class _SelbiddatWidgetState extends State<SelbiddatWidget>
                                                         BorderRadius.circular(
                                                             8.0),
                                                     child: Image.asset(
-                                                      'assets/images/persegi.png',
+                                                      'assets/images/perbg.png',
                                                       width: double.infinity,
                                                       height: double.infinity,
                                                       fit: BoxFit.contain,
@@ -396,7 +396,7 @@ class _SelbiddatWidgetState extends State<SelbiddatWidget>
                                                           child:
                                                               FlutterFlowExpandedImageView(
                                                             image: Image.asset(
-                                                              'assets/images/perbg.png',
+                                                              'assets/images/perrum.png',
                                                               fit: BoxFit
                                                                   .contain,
                                                             ),
@@ -418,7 +418,7 @@ class _SelbiddatWidgetState extends State<SelbiddatWidget>
                                                             BorderRadius
                                                                 .circular(8.0),
                                                         child: Image.asset(
-                                                          'assets/images/perbg.png',
+                                                          'assets/images/perrum.png',
                                                           width:
                                                               double.infinity,
                                                           height:
